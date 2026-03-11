@@ -19,17 +19,17 @@ export function Hero() {
             <PillAvatar src="/avatars/4.jpg" />
           </PillAvatarGroup>
           <p className="text-muted-foreground px-2 text-xs font-medium sm:border-l-1 sm:text-sm">
-            Join <span className="text-foreground">3 Million</span> other users already on board
+            Your cycle, your rules. <span className="text-foreground">Prioritizing your privacy.</span>
           </p>
         </Pill>
         <h1 className="text-center text-4xl leading-[1.1] font-medium tracking-tight sm:text-7xl">
-          Meet the App<span className="text-muted-foreground block">That Does It All.</span>
+          Meet the Period Tracker<span className="text-muted-foreground block">That Truly Understands You.</span>
         </h1>
         <p className="max-w-lg text-center leading-6 tracking-tight sm:text-xl">
-          Powerful, intuitive, and ready to make your life easier, start using Acme App today.
+          Beautifully designed, exceptionally private, and powered by AI. Petal helps you tune into your body's natural rhythms with phase-aware insights, effortless logging, and a built-in smart assistant.
         </p>
         <Button className="mb-10 w-fit" size="lg" asChild>
-          <Link href="/pricing">Get Started</Link>
+          <Link href="https://apps.apple.com">Download on the App Store</Link>
         </Button>
         <Image src="/app-image-1.png" alt="Hero" width={304} height={445} />
       </div>

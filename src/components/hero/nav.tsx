@@ -7,12 +7,12 @@ const navItems = [
     href: "/#features",
   },
   {
-    label: "Pricing",
-    href: "/pricing",
+    label: "Partner Mode",
+    href: "/#partner-mode",
   },
   {
-    label: "Legal",
-    href: "/terms-and-conditions",
+    label: "Privacy",
+    href: "/privacy-policy",
   },
 ];
 

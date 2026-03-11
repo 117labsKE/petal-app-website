@@ -42,40 +42,39 @@ export function FAQs() {
           Asked <span className="text-muted-foreground">Questions</span>
         </h2>
         <p className="max-w-lg text-xs leading-6 tracking-tight sm:text-base">
-          Get answers to commonly asked questions.
+          Everything you need to know about Petal.
         </p>
         <Button className="w-fit" size="lg" asChild>
-          <Link href="/pricing">Get Started</Link>
+          <Link href="https://apps.apple.com">Get Started</Link>
         </Button>
       </div>
-      <Accordion type="single" collapsible defaultValue="branding" className="grid w-full gap-4">
-        <AccordionItemFAQs value="branding">
-          <AccordionTriggerFAQs>Will my app show your branding anywhere?</AccordionTriggerFAQs>
+      <Accordion type="single" collapsible defaultValue="privacy" className="grid w-full gap-4">
+        <AccordionItemFAQs value="privacy">
+          <AccordionTriggerFAQs>Is my health data private and secure?</AccordionTriggerFAQs>
           <AccordionContentFAQs>
             <p>
-              Never. Your app will be fully white-labeled with your own name, logo, and design. We stay completely
-              invisible.
+              Yes. Privacy is our foundational principle. Your sensitive cycle data is securely stored, and we provide transparent options to export or completely delete your account and data at any time.
             </p>
           </AccordionContentFAQs>
         </AccordionItemFAQs>
-        <AccordionItemFAQs value="skills">
-          <AccordionTriggerFAQs>Do I need technical skills to use Acme?</AccordionTriggerFAQs>
+        <AccordionItemFAQs value="dark-mode">
+          <AccordionTriggerFAQs>Does Petal have a dark mode?</AccordionTriggerFAQs>
           <AccordionContentFAQs>
             <p>
-              No. We handle all the technical setup for you. You can focus on your business while we handle the rest.
+              Petal was built with an ethereal, native dark-themed UI that is gentle on the eyes. It features beautiful gradients, smooth animations, and satisfying iOS-native haptics.
             </p>
           </AccordionContentFAQs>
         </AccordionItemFAQs>
-        <AccordionItemFAQs value="devices">
-          <AccordionTriggerFAQs>Will my app work on all devices?</AccordionTriggerFAQs>
+        <AccordionItemFAQs value="ai-assistant">
+          <AccordionTriggerFAQs>How does the AI Assistant work?</AccordionTriggerFAQs>
           <AccordionContentFAQs>
-            <p>Yes. Our app is designed to work on all devices, including iOS and Android.</p>
+            <p>Our smart assistant, 'Ask Petal,' is designed to provide supportive, educational insights based on your cycle phase and wellness queries. You can type or use your voice to communicate with her naturally.</p>
           </AccordionContentFAQs>
         </AccordionItemFAQs>
-        <AccordionItemFAQs value="notifcations">
-          <AccordionTriggerFAQs>Can I send notifications and updates to users?</AccordionTriggerFAQs>
+        <AccordionItemFAQs value="partner-dashboard">
+          <AccordionTriggerFAQs>How does the Partner Dashboard work?</AccordionTriggerFAQs>
           <AccordionContentFAQs>
-            <p>Yes. You can send notifications and updates to users through our app.</p>
+            <p>You can invite your partner to join 'Partner Mode.' They will receive a simplified, secure view of your current phase and tips on how they can support you, without seeing your highly personal logging details.</p>
           </AccordionContentFAQs>
         </AccordionItemFAQs>
       </Accordion>

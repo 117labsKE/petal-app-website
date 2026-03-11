@@ -20,8 +20,8 @@ type Props = {
 export function DesktopNav({ items, className }: Props) {
   return (
     <nav className={cn("mx-auto flex w-full max-w-7xl items-center justify-between gap-4", className)}>
-      <Link href="/">
-        <Image src="/logo.svg" alt="logo" width={86} height={26} />
+      <Link href="/" className="font-semibold text-2xl tracking-tight">
+        Petal
       </Link>
       <NavigationMenu>
         <NavigationMenuList className="gap-8">
@@ -33,7 +33,7 @@ export function DesktopNav({ items, className }: Props) {
         </NavigationMenuList>
       </NavigationMenu>
       <Button asChild>
-        <Link href="/pricing">Get Started</Link>
+        <Link href="https://apps.apple.com">Download Petal</Link>
       </Button>
     </nav>
   );

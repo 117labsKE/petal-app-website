@@ -4,10 +4,10 @@ import Link from "next/link";
 
 const links = [
   {
-    title: "Acme",
+    title: "App",
     links: [
       {
-        label: "Download App",
+        label: "Download Petal",
         href: "https://apps.apple.com/",
         title: "Download the app from the App Store",
       },
@@ -16,30 +16,25 @@ const links = [
         href: "/#features",
         title: "See our features",
       },
-      {
-        label: "Pricing",
-        href: "/pricing",
-        title: "View pricing",
-      },
-    ],
-  },
-  {
-    title: "Products",
-    links: [
-      {
-        label: "For Android",
-        href: "https://play.google.com/store",
-        title: "Download on Android",
-      },
-      {
-        label: "For iPhone",
-        href: "https://apps.apple.com/",
-        title: "Download on iOS",
-      },
     ],
   },
   {
     title: "Company",
+    links: [
+      {
+        label: "Contact Us",
+        href: "mailto:support@petalapp.com",
+        title: "Contact Us",
+      },
+      {
+        label: "Help Center",
+        href: "#",
+        title: "Help Center",
+      },
+    ],
+  },
+  {
+    title: "Legal",
     links: [
       {
         label: "Terms & Conditions",
@@ -50,11 +45,6 @@ const links = [
         label: "Privacy Policy",
         href: "/privacy-policy",
         title: "Read our Privacy Policy",
-      },
-      {
-        label: "Refund Policy",
-        href: "/refund-policy",
-        title: "Read our Refund Policy",
       },
     ],
   },
