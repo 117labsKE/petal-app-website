@@ -65,11 +65,11 @@ For more detailed setup instructions, check out [Paddle's documentation to deplo
 
 ## Password reset redirect page
 
-This project includes a Firebase password reset redirect route at `/auth/reset`.
+This project includes a post-reset redirect route at `/auth/reset` for Firebase Auth password reset emails.
 
 - Set Firebase Auth password reset `continueUrl` to `https://<your-domain>/auth/reset`
-- Firebase appends params such as `mode=resetPassword` and `oobCode=<code>`
-- The page deep-links into the app using `periodtracker://auth/reset-password?mode=resetPassword&oobCode=<encoded>`
-- Cross-device/manual fallback links are configured via:
+- The page shows a success handoff state (password already updated) and opens the app
+- Default app deep link is `periodtracker://auth/reset-password` and can be overridden with:
+  - `NEXT_PUBLIC_POST_RESET_DEEP_LINK`
+- Cross-device install fallback link is configured via:
   - `NEXT_PUBLIC_APP_DOWNLOAD_URL`
-  - `NEXT_PUBLIC_RESET_EMAIL_REQUEST_URL`
