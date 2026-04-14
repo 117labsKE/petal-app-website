@@ -62,3 +62,14 @@ Create a `.env.local` file based on `.env.example` with the following variables:
 - `NEXT_PUBLIC_PADDLE_ENV` - Paddle environment (`sandbox` or `production`)
 
 For more detailed setup instructions, check out [Paddle's documentation to deploy your starter app and launch a checkout from iOS](https://developer.paddle.com/build/nextjs-vercel-mobile-app-starter-kit).
+
+## Password reset redirect page
+
+This project includes a Firebase password reset redirect route at `/auth/reset`.
+
+- Set Firebase Auth password reset `continueUrl` to `https://<your-domain>/auth/reset`
+- Firebase appends params such as `mode=resetPassword` and `oobCode=<code>`
+- The page deep-links into the app using `periodtracker://auth/reset-password?mode=resetPassword&oobCode=<encoded>`
+- Cross-device/manual fallback links are configured via:
+  - `NEXT_PUBLIC_APP_DOWNLOAD_URL`
+  - `NEXT_PUBLIC_RESET_EMAIL_REQUEST_URL`
